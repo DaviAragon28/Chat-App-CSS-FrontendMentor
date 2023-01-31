@@ -2,6 +2,6 @@
 const { message, right } = Astro.props;
 ---
 
-<p class={`text-[10px] w-[150px] py-1 px-2 rounded-xl ${!right ? 'bg-GrayishBlue text-moderateViolet rounded-bl-sm' : 'text-DesaturatedDarViolet bg-white self-end rounded-br-sm shadow-sm'}`}>
+<p class={`text-[10px] w-[150px] py-1 px-2 rounded-xl animate-pulse ${!right ? 'bg-[#ece5f6]  text-moderateViolet rounded-bl-sm' : 'text-DesaturatedDarViolet bg-white self-end rounded-br-sm shadow-sm'}`}>
     {message}
 </p>

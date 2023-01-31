@@ -1,3 +1,13 @@
-<div class="  h-96 rounded-br-full bg-gradient-to-b from-LightMagenta to-LightViolet w-40 absolute top-0 -z-10 md:w-52 lg:h-full lg:w-96">
+---
+const { right } = Astro.props;
+---
 
+<div
+    class={`h-96  w-40 absolute -z-10 md:w-52 lg:h-[80%] lg:w-96 
+${
+    !right
+        ? "bg-gradient-to-b from-LightMagenta to-LightViolet top-0 rounded-br-full"
+        : "bg-[#ece5f6] rounded-tl-full right-0 bottom-0"
+}`}
+>
 </div>
